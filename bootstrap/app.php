@@ -1,5 +1,7 @@
 <?php
 
+use App\Console\Commands\GenerateGatewayReports;
+use App\Console\Commands\ProcessGatewayLogs;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
@@ -14,7 +16,8 @@ return Application::configure(basePath: dirname(__DIR__))
         //
     })
     ->withCommands([
-        
+        ProcessGatewayLogs::class,
+        GenerateGatewayReports::class,
     ])
     ->withExceptions(function (Exceptions $exceptions): void {
         //
