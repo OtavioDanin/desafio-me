@@ -1,0 +1,4 @@
+CREATE DATABASE logs_api_gateway
+  WITH OWNER = admin
+  ENCODING = 'UTF8'
+  CONNECTION LIMIT = -1;
