@@ -10,7 +10,7 @@ class LogsApiGatewayValidation implements LogsApiGatewayValidationInterface
 {
     public function validate(): void
     {
-        $filePath = config('app.file_path');
+        $filePath = config('app.file_log_path');
         if (!file_exists($filePath)) {
             sleep(1);
             throw new ProcessGatewayLogsException('File not found.' . $filePath);

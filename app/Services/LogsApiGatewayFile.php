@@ -10,7 +10,7 @@ class LogsApiGatewayFile implements LogsApiGatewayInterface
 {
     public function getLog(): Generator
     {
-        $handle = fopen(config('app.file_path'), 'r');
+        $handle = fopen(config('app.file_log_path'), 'r');
         while (!feof($handle)) {
             $line = fgets($handle);
             if ($line !== false) {
