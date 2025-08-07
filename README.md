@@ -75,8 +75,8 @@ Certifique-se de ter instalado em sua máquina:
     ```bash
     php artisan app:generate-gateway-reports
     ```
-## 📍 Execução dos Testes Unitários da Aplicação
-    * **PHPUnit:**
+## Execução dos Testes Unitários da Aplicação
+    * PHPUNit
     ```bash
     ./vendor/bin/phpunit
     ```
