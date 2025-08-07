@@ -74,7 +74,7 @@ Certifique-se de ter instalado em sua máquina:
     * Geração de Relatórios.
     ```bash
     php artisan app:generate-gateway-reports
-
+    ```
 ## 📍 Execução dos Testes Unitários da Aplicação
     * **PHPUnit:**
     ```bash
