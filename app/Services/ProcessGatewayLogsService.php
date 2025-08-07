@@ -14,7 +14,7 @@ class ProcessGatewayLogsService implements ProcessGatewayLogsServiceInterface
 
     public function __construct(
         protected LogApiGatewayRepositoryInterface $logRequestRepository,
-        protected LogsApiGatewayInterface $log,
+        protected LogsApiGatewayServiceInterface $log,
     ) {}
 
     public function save($dataLog): void

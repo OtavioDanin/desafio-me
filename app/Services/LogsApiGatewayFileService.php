@@ -6,7 +6,7 @@ namespace App\Services;
 
 use Generator;
 
-class LogsApiGatewayFile implements LogsApiGatewayInterface
+class LogsApiGatewayFileService implements LogsApiGatewayServiceInterface
 {
     public function getLog(): Generator
     {

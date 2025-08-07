@@ -6,7 +6,7 @@ namespace App\Services;
 
 use App\Exceptions\ProcessGatewayLogsException;
 
-class LogsApiGatewayValidation implements LogsApiGatewayValidationInterface
+class LogsApiGatewayServiceValidation implements LogsApiGatewayServiceValidationInterface
 {
     public function validate(): void
     {

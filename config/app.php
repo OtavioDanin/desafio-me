@@ -123,5 +123,6 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
-    'file_log_path' => env('FILE_LOG_PATH')
+    'file_log_path' => env('FILE_LOG_PATH'),
+    'file_path_report' => env('FILE_PATH_REPORT'),
 ];

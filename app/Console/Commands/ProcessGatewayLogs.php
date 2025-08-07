@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Exceptions\ProcessGatewayLogsException;
-use App\Services\LogsApiGatewayInterface;
-use App\Services\LogsApiGatewayValidationInterface;
+use App\Services\LogsApiGatewayServiceInterface;
+use App\Services\LogsApiGatewayServiceValidationInterface;
 use App\Services\ProcessGatewayLogsServiceInterface;
 use Illuminate\Console\Command;
 use Throwable;
@@ -28,8 +28,8 @@ class ProcessGatewayLogs extends Command
     protected $description = 'Command para processar o arquivo de log do API Gateway e salvar no banco de dados.';
 
     public function __construct(
-        protected LogsApiGatewayInterface $log,
-        protected LogsApiGatewayValidationInterface $validationLog,
+        protected LogsApiGatewayServiceInterface $log,
+        protected LogsApiGatewayServiceValidationInterface $validationLog,
         protected ProcessGatewayLogsServiceInterface $processGatewayLogsService,
 
     ) {
