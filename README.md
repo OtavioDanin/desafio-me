@@ -76,10 +76,10 @@ Certifique-se de ter instalado em sua máquina:
     php artisan app:generate-gateway-reports
     ```
 ## Execução dos Testes Unitários da Aplicação
-PHPUNit
+1.  **PHPUNit:**
+    Isso executará todos os testes criados.
     ```bash
     ./vendor/bin/phpunit
-    ```
     
 ## 📍 Visualizar o resultado da Aplicação
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
