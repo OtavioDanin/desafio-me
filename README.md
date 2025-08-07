@@ -68,4 +68,8 @@ Certifique-se de ter instalado em sua máquina:
     * Processamento Log.
     ```bash
     php artisan app:process-gateway-logs
+    ```
+    * Geração de Relatórios.
+    ```bash
+    php artisan app:generate-gateway-reports
     
