@@ -1,4 +1,4 @@
-# 🚀 Processamente de Log da API Gateway - Laravel 12
+# 🚀 Processamente de Log da API Gateway - Laravel Commands
 
 ## 📋 Descrição
 Sistema para processamento de logs de API Gateway com:
