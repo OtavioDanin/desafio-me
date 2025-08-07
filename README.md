@@ -15,7 +15,7 @@ Sistema para processamento de logs de API Gateway com:
 
 * **Processamento Log:**
     * Faz a leitura do arquivo de log em um diretório.
-    * Extrai os dados necessários para a geração dos relatórios.
+    * Extrai os dados necessários para a geração dos relatórios utilizando Generators (Processamento mais eficiente em termos de custo Computacional e velocidade).
     * Salva os dados extraidos no em uma tabela no banco de dados.
 * **Relatórios:**
     * Obtem do banco os dados necessários para gerar cada um dos relatórios.
@@ -29,6 +29,7 @@ As ferramentas de solução proposta para este desafio back-end foram:
 - Laravel 12 (CLI Commands).
 - PostgreSQL 17.
 - PHP 8.3+ (Opcache + JIT).
+- PHPUnit 11+, Mockery.
 
 ## 🚀🔧 Como Instalar e Rodar
 
@@ -74,6 +75,11 @@ Certifique-se de ter instalado em sua máquina:
     ```bash
     php artisan app:generate-gateway-reports
 
+## 📍 Execução dos Testes UNitários da Aplicação
+    **PHPUnit**
+    ```bash
+    ./vendor/bin/phpunit
+    
 ## 📍 Visualizar o resultado da Aplicação
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
 
