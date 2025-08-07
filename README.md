@@ -29,8 +29,38 @@ Sistema para processamento de logs de API Gateway com:
 - PostgreSQL 17
 - PHP 8.3+(Opcache + JIT)
 
-## 🔧 Instalação
+## 🚀🔧 Como Instalar e Rodar
 
-1. **Clonar repositório**:
-```bash
-git clone [repo-url] && cd [project-folder]
+Siga os passos abaixo para configurar e executar a aplicação em seu ambiente local.
+
+### Passos de Instalação do Projeto com Docker
+
+Certifique-se de ter instalado em sua máquina:
+
+* Docker
+* Docker Composer
+
+1.  **Clonar repositório:**
+    ```bash
+    git clone [repo-url] && cd [project-folder]
+2.  **Faça o build das imagens e start dos container, executando:**
+    ```bash
+    docker network create me_network
+    docker compose up -d
+    ```
+3.  **Entre no container desafio-me, e execute:**
+    ```bash
+    docker exec -it desafio-me sh
+    
+4.  **Gere a Chave da Aplicação:**
+    ```bash
+    php artisan key:generate
+
+5.  **Instale as Dependências do Composer:**
+    ```bash
+    composer install # ou composer install --no-dev -o -a para produção
+    ```
+6.  **Execute as Migrações e Seeds:**
+    Isso criará as tabelas no banco de dados.
+    ```bash
+    php artisan migrate:fresh
