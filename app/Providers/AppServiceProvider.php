@@ -12,7 +12,7 @@ use App\Services\LogsApiGatewayServiceValidation;
 use App\Services\LogsApiGatewayServiceValidationInterface;
 use App\Services\ProcessGatewayLogsService;
 use App\Services\ProcessGatewayLogsServiceInterface;
-use App\Services\ReportApiGatewayService;
+use App\Services\ReportCSVApiGatewayService;
 use App\Services\ReportApiGatewayServiceInterface;
 use Illuminate\Support\ServiceProvider;
 
@@ -30,7 +30,7 @@ class AppServiceProvider extends ServiceProvider
 
 
         $this->app->bind(ReportApiGatewayRepositoryInterface::class, ReportApiGatewayRepository::class);
-        $this->app->bind(ReportApiGatewayServiceInterface::class, ReportApiGatewayService::class);
+        $this->app->bind(ReportApiGatewayServiceInterface::class, ReportCSVApiGatewayService::class);
     }
 
     /**

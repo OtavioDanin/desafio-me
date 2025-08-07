@@ -7,7 +7,7 @@ namespace App\Services;
 use App\Exceptions\ReportLogsException;
 use App\Repositories\ReportApiGatewayRepositoryInterface;
 
-class ReportApiGatewayService implements ReportApiGatewayServiceInterface
+class ReportCSVApiGatewayService implements ReportApiGatewayServiceInterface
 {
     public function __construct(protected ReportApiGatewayRepositoryInterface $reportApiGatewayRepository) {}
 
