@@ -78,5 +78,4 @@ Certifique-se de ter instalado em sua máquina:
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
 
 
-![alt text](<Imagem colada.png>)
     
