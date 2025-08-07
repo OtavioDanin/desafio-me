@@ -78,4 +78,4 @@ Certifique-se de ter instalado em sua máquina:
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
 
 
-    
+![image](<https://github.com/OtavioDanin/desafio-me/blob/main/Imagem%20colada.png>)
