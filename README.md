@@ -22,7 +22,7 @@ Sistema para processamento de logs de API Gateway com:
         * Requisições por consumido.
         * Requisições por serviço.
         * Tempo médio de request, proxy e gateway por serviço.
-    * Com a obtenão dos dados específicos, exporta estes relatórios para um arquivo csv em um diretório.
+    * Com a obteção dos dados específicos, exporta estes relatórios para um arquivo csv em um diretório.
 
 ## 🛠 Tecnologias
 - Laravel 12
