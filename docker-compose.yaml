@@ -4,9 +4,6 @@ services:
     image: desafio-me
     build:
       context: .
-    ports:
-      - 80:80
-      - 443:443
     restart: unless-stopped
     stdin_open: true
     tty: true 
