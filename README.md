@@ -18,11 +18,11 @@ Sistema para processamento de logs de API Gateway com:
     * Extrai os dados necessários para a geração dos relatórios.
     * Salva os dados extraidos no em uma tabela no banco de dados.
 * **Relatórios:**
-    * Recupera do banco os dados necessários para gerar cada um dos relatórios.
+    * Obtem do banco os dados necessários para gerar cada um dos relatórios.
         * Requisições por consumido.
         * Requisições por serviço.
         * Tempo médio de request, proxy e gateway por serviço.
-    * Exportar este relatório para um arquivo PDF.
+    * Com a obtenão dos dados específicos, exporta estes relatórios para um arquivo csv em um diretório.
 
 ## 🛠 Tecnologias
 - Laravel 12
