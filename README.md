@@ -77,5 +77,7 @@ Certifique-se de ter instalado em sua máquina:
 ## 📍 Visualizar o resultado da Aplicação
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
 
+## ✨ Fluxograma
+
 
 ![image](<https://github.com/OtavioDanin/desafio-me/blob/main/fluxograma.jpg>)
