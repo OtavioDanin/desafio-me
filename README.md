@@ -65,7 +65,7 @@ Certifique-se de ter instalado em sua máquina:
     ```bash
     php artisan migrate:fresh
 7.  **Execute o projeto(CLI Commands):**
-    Processamento Log.
+    *Processamento Log.
     ```bash
     php artisan app:process-gateway-logs
     
