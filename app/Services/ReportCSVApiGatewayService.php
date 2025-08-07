@@ -51,9 +51,9 @@ class ReportCSVApiGatewayService implements ReportApiGatewayServiceInterface
         fputcsv($file, [
             'Service ID',
             'Service Name',
-            'Avg Proxy Latency (ms)',
-            'Avg Gateway Latency (ms)',
-            'Avg Request Latency (ms)'
+            'Avg Proxy Latency',
+            'Avg Gateway Latency',
+            'Avg Request Latency'
         ]);
 
         $dataAverage = $this->reportApiGatewayRepository->getAverageLatenciesByService()->toArray();
