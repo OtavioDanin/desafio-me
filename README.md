@@ -76,4 +76,7 @@ Certifique-se de ter instalado em sua máquina:
 
 ## 📍 Visualizar o resultado da Aplicação
 Os relatórios estarão na raiz da aplicação, na pasta "reports"
+
+
+![alt text](<Imagem colada.png>)
     
