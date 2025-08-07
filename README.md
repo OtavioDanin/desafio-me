@@ -25,7 +25,7 @@ Sistema para processamento de logs de API Gateway com:
     * Com a obteção dos dados específicos, exporta cada um  destes relatórios para arquivos csv em um diretório.
 
 ## 🛠 Tecnologias
-- Laravel 12
+- Laravel 12(CLI Commands)
 - PostgreSQL 17
 - PHP 8.3+(Opcache + JIT)
 
@@ -64,3 +64,8 @@ Certifique-se de ter instalado em sua máquina:
     Isso criará as tabelas no banco de dados.
     ```bash
     php artisan migrate:fresh
+7.  **Execute o projeto(CLI Commands):**
+    Processamento Log.
+    ```bash
+    php artisan app:process-gateway-logs
+    
