@@ -25,6 +25,7 @@ Sistema para processamento de logs de API Gateway com:
     * Com a obteção dos dados específicos, exporta cada um  destes relatórios para arquivos csv em um diretório.
 
 ## 🛠 Tecnologias
+As ferramentas de solução proposta para este desafio back-end foram:
 - Laravel 12 (CLI Commands).
 - PostgreSQL 17.
 - PHP 8.3+ (Opcache + JIT).
