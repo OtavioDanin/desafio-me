@@ -8,7 +8,6 @@ RUN apk add --no-cache icu-dev && \
     docker-php-ext-enable intl
 
 RUN apk add --no-cache \
-    nginx \
     supervisor \
     libpng-dev \
     libzip-dev \
@@ -37,7 +36,7 @@ RUN { \
     echo 'opcache.use_cwd=0'; \
     # echo 'opcache.preload=/var/www/html/preload.php'; \
     # echo 'opcache.preload_user=www-data'; \
-} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+    } > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
 RUN { \
     echo 'expose_php=Off'; \
@@ -45,11 +44,9 @@ RUN { \
     echo 'upload_max_filesize=100M'; \
     echo 'post_max_size=50M'; \
     echo 'max_execution_time=600'; \
-} > /usr/local/etc/php/conf.d/laravel.ini
+    } > /usr/local/etc/php/conf.d/laravel.ini
 
 RUN apk add supervisor
-COPY default.conf /etc/nginx/http.d/default.conf
-COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
 COPY ./ /var/www/html
 RUN chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/storage/framework/views/ /var/www/html/storage/logs/ /var/www/html/storage/framework/sessions/
@@ -67,7 +64,3 @@ RUN php artisan route:cache
 RUN php artisan view:cache
 
 RUN composer install --no-dev -o -a
-
-EXPOSE 80 443
-RUN mkdir -p  /var/log/supervisor
-CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
